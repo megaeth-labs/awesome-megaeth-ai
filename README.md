@@ -27,7 +27,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 ### DeFi
 
 ### Identity & Naming
-- [dotmega-domains-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - AI coding skill for MegaNames (.mega naming service) covering name registration with USDM payments, forward/reverse resolution, text records, subdomains, subdomain marketplace with token gating, and Warren contenthash linking.
+- [dotmega-domains-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - AI coding skill for .Mega Domains (.mega naming service) covering name registration with USDM payments, forward/reverse resolution, text records, subdomains, subdomain marketplace with token gating, and Warren contenthash linking.
 
 ### Infrastructure
 
