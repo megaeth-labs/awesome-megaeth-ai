@@ -25,10 +25,12 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 - [megaeth-dev-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - End-to-end MegaETH development skill. Covers Foundry setup, eth_sendRawTransactionSync (EIP-7966) for instant receipts, MegaEVM gas model, storage optimization with Solady patterns, WebSocket mini-block subscriptions, Rex4 per-frame state growth, Privy headless signing, and debugging with mega-evme.
 
 ### DeFi
+
 - [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - AI coding skill for Kumbaya DEX (Uniswap V3 fork) covering token swaps, quoting, liquidity provision, pool discovery, multi-hop routing, and Permit2 flows on MegaETH.
 - [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - AI coding skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integration patterns, and usage across MegaNames, Kumbaya DEX, and paymasters.
 
 ### Identity & Naming
+
 - [dotmega-domains-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - AI coding skill for .Mega Domains (.mega naming service) covering name registration with USDM payments, forward/reverse resolution, text records, subdomains, subdomain marketplace with token gating, and Warren contenthash linking.
  
 ### Infrastructure
