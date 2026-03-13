@@ -27,6 +27,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 ### DeFi
 
 - [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - AI coding skill for Kumbaya DEX (Uniswap V3 fork) covering token swaps, quoting, liquidity provision, pool discovery, multi-hop routing, and Permit2 flows on MegaETH.
+- [meridian-x402-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/meridian.md) - AI coding skill for Meridian x402 payments on MegaETH covering seller-side settlement with the Meridian API, buyer-side USDm approval and EIP-712 TransferWithAuthorization signing against the MegaETH forwarder, and payment payload construction.
 - [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - AI coding skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integration patterns, and usage across MegaNames, Kumbaya DEX, and paymasters.
 
 ### Identity & Naming
