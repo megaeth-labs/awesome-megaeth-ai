@@ -37,6 +37,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 ### Infrastructure
 
 - [erc8004-trustless-agents-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc8004-trustless-agents.md) - AI coding skill for ERC-8004 (Trustless Agents) on MegaETH covering on-chain agent identity registration, reputation feedback, and validation requests across the Identity, Reputation, and Validation registries.
+- [warren-tools](https://github.com/planetai87/warren-tools) - AI coding skills and developer tools for WARREN, MegaETH's on-chain permanent web CMS. Includes Claude Code skills for deploying websites and NFT collections via fractal tree architecture, a standalone content loader, and a Chrome extension for browsing on-chain sites.
 
 ## AI Agents
 
