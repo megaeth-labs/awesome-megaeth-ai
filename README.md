@@ -48,6 +48,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 Developer tools for the MegaETH ecosystem.
 
 - [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical token registry for MegaETH. Machine-readable token metadata (address, decimals, symbol, logo) used by DEXs, wallets, and AI agents for token discovery and validation.
+- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - MCP server for on-chain portfolio data on MegaETH via MTRKR. 11 read-only tools for token portfolios, NFT holdings, DeFi positions (Kumbaya, Prism), token risk scanning, approval checking, address inspection, transaction decoding, .mega name resolution, and pricing.
 
 ## Learning Resources
 
