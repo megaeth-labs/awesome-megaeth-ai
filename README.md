@@ -33,6 +33,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 ### DeFi
 
 - [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - AI coding skill for Kumbaya DEX (Uniswap V3 fork) covering token swaps, quoting, liquidity provision, pool discovery, multi-hop routing, and Permit2 flows on MegaETH.
+- [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - AI coding skill for integrating Sir Trading covering going long (minting APE), providing liquidity (minting TEA), closing/reducing positions (burning), quoting prices, creating new pairs (vaults), MegaSIR staking, claiming rewards, fee auctions, pair discovery, trading bots, and portfolio tracking on MegaETH.
 
 ### Identity & Content
 
