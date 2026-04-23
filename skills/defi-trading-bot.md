@@ -4,7 +4,7 @@
 
 ## Overview
 
-MegaETH's 10ms block times enable trading strategies that are impossible on other chains. This skill teaches AI coding assistants how to build, deploy, and manage on-chain trading bots on MegaETH using real-time price feeds, instant transaction confirmations via `eth_sendRawTransactionSync` (EIP-7966), and Kumbaya DEX for execution.
+MegaETH's 10ms block times enable trading strategies that are impossible on other chains. This skill teaches AI coding assistants how to build, deploy, and manage on-chain trading bots on MegaETH using real-time price feeds, instant transaction confirmations via `eth_sendRawTransactionSync` (EIP-7966 — exposed on MegaETH as `realtime_sendRawTransaction` per the [Realtime API docs](https://docs.megaeth.com/dev/read/rpc/realtime_sendRawTransaction)), and Kumbaya DEX for execution.
 
 ## Concepts
 
