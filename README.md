@@ -34,7 +34,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 
 - [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - AI coding skill for Kumbaya DEX (Uniswap V3 fork) covering token swaps, quoting, liquidity provision, pool discovery, multi-hop routing, and Permit2 flows on MegaETH.
 - [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - AI coding skill for integrating Sir Trading covering going long (minting APE), providing liquidity (minting TEA), closing/reducing positions (burning), quoting prices, creating new pairs (vaults), MegaSIR staking, claiming rewards, fee auctions, pair discovery, trading bots, and portfolio tracking on MegaETH.
-- [defi-trading-bot-skill](https://github.com/xamdkx/awesome-megaeth-ai/blob/main/skills/defi-trading-bot.md) - AI coding skill for building automated DeFi trading bots on MegaETH. Covers real-time WebSocket price feeds, instant swap execution via Kumbaya DEX with `eth_sendRawTransactionSync`, momentum strategy patterns, position management with stop-loss/take-profit, and safety rules for production bots.
+- [defi-trading-bot-skill](https://github.com/xamdkx/awesome-megaeth-ai/blob/main/skills/defi-trading-bot.md) - AI coding skill for building automated DeFi trading bots on MegaETH. Covers real-time WebSocket price feeds, instant swap execution via Kumbaya DEX with `eth_sendRawTransactionSync`, momentum + mean-reversion strategy patterns, position management with stop-loss/take-profit, backtesting + paper-trading workflows, MEV/front-running awareness, production reliability (WebSocket reconnect, watchdog, kill switch), and safety rules for production bots.
 
 ### Identity & Content
 
