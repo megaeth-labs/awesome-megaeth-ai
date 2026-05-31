@@ -1,6 +1,6 @@
 # Awesome MegaETH AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of AI-friendly tools, skills, docs, and reference material for building on MegaETH.
+> A curated list of AI-friendly tools, skills, docs, and reference material for agents operating on MegaETH.
 
 **Disclaimer:** The resources listed here are community-contributed and are **not endorsed by MegaETH Labs**. Always do your own research before using any tool or resource. Inclusion in this list does not imply any warranty, security audit, or official recommendation.
 
@@ -12,8 +12,9 @@ MegaETH is unusually good for agentic software because it lets tools reason and 
 - **Mini-block and WebSocket-first architecture** for fast state updates and subscriptions.
 - **A storage/gas model worth optimizing for explicitly**, especially in hot paths.
 - **Emerging agent-native standards and payment rails** such as x402, ERC-7710 delegations, and ERC-8004 trustless agents.
+- **Practical support for discovery, intentions, and execution**, not just contract deployment.
 
-This list is optimized for **AI coding agents and developer copilots** that need practical references, not just marketing links.
+This list is optimized for **AI agents, developer copilots, and autonomous workflows** that need practical references, not just marketing links.
 
 ## Contents
 
@@ -31,7 +32,7 @@ This list is optimized for **AI coding agents and developer copilots** that need
 
 ## Start Here
 
-If you're wiring up an AI agent for MegaETH, this is the most useful reading order:
+If you're wiring up an AI agent for MegaETH — whether for discovery, intent construction, execution, or building — this is the most useful reading order:
 
 1. [MegaETH Docs](https://docs.megaeth.com) - overall docs portal
 2. [Realtime API docs](https://docs.megaeth.com/realtime-api) - how MegaETH's realtime transaction flow differs from standard RPC usage
@@ -41,7 +42,7 @@ If you're wiring up an AI agent for MegaETH, this is the most useful reading ord
 
 ## AI Coding Skills
 
-AI coding skills that enhance developer productivity on MegaETH. Skills follow the [SKILL.md](https://docs.anthropic.com/en/docs/claude-code/skills) / [AGENTS.md](https://docs.agentsmd.dev) conventions and work with tools like Claude Code, Cursor, Windsurf, Codex, and OpenClaw.
+AI skills that help agents and copilots operate effectively on MegaETH. Skills follow the [SKILL.md](https://docs.anthropic.com/en/docs/claude-code/skills) / [AGENTS.md](https://docs.agentsmd.dev) conventions and work with tools like Claude Code, Cursor, Windsurf, Codex, and OpenClaw.
 
 ### Core MegaETH Development
 
@@ -70,10 +71,10 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 - [erc8004-trustless-agents-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc8004-trustless-agents.md) - Skill for ERC-8004 Trustless Agents on MegaETH covering identity registration, reputation feedback, and validation request flows.
 - [ERC-8004 MegaETH skill draft](./erc8004-skill.md) - In-repo draft/spec notes for a MegaETH-focused ERC-8004 agent skill.
 
-## Developer Tools and Data Sources
+## Developer Tools, Data Sources, and Agent Infrastructure
 
 - [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical token registry for MegaETH. Machine-readable token metadata for token discovery, wallet integration, and agent-side validation.
-- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - MCP server for on-chain portfolio data on MegaETH via MTRKR. Useful for read-only agent workflows around balances, DeFi positions, approvals, and address inspection.
+- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - MCP server for on-chain portfolio data on MegaETH via MTRKR. Useful for discovery-heavy and read-only agent workflows around balances, DeFi positions, approvals, address inspection, and wallet interpretation.
 - [mega-evm](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM encapsulation based on revm. Includes `mega-evme` for replay, gas profiling, and MegaETH-specific debugging.
 
 ## Official Docs and Protocol References
@@ -81,7 +82,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 - [MegaETH Docs](https://docs.megaeth.com) - Official docs portal.
 - [Architecture](https://docs.megaeth.com/architecture) - High-level architecture reference for how MegaETH is put together.
 - [MegaEVM](https://docs.megaeth.com/megaevm) - MegaETH execution-model differences, especially relevant for contract engineers and AI code generation.
-- [Realtime API](https://docs.megaeth.com/realtime-api) - Reference for realtime transaction submission and immediate-feeling confirmation flows.
+- [Realtime API](https://docs.megaeth.com/realtime-api) - Reference for realtime transaction submission and immediate-feeling confirmation flows, especially useful for execution agents and intent-driven systems.
 - [Mini-blocks](https://docs.megaeth.com/miniblocks) - How mini-block production affects indexing, subscriptions, and application UX.
 - [RPC docs](https://docs.megaeth.com/rpc/1-method) - RPC method reference.
 - [RPC error codes](https://docs.megaeth.com/rpc/2-error-codes) - Useful for agent retries and debugging.
