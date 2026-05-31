@@ -1,65 +1,97 @@
 # Awesome MegaETH AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of AI-powered tools, skills, and resources for building on MegaETH.
+> A curated list of AI-friendly tools, skills, docs, and reference material for building on MegaETH.
 
 **Disclaimer:** The resources listed here are community-contributed and are **not endorsed by MegaETH Labs**. Always do your own research before using any tool or resource. Inclusion in this list does not imply any warranty, security audit, or official recommendation.
 
+## What makes MegaETH different for AI agents?
+
+MegaETH is unusually good for agentic software because it lets tools reason and act against a chain that feels closer to a low-latency backend than a traditional delayed blockchain UX. For AI agents, that means:
+
+- **Realtime transaction flows** via `eth_sendRawTransactionSync` / realtime RPC patterns.
+- **Mini-block and WebSocket-first architecture** for fast state updates and subscriptions.
+- **A storage/gas model worth optimizing for explicitly**, especially in hot paths.
+- **Emerging agent-native standards and payment rails** such as x402, ERC-7710 delegations, and ERC-8004 trustless agents.
+
+This list is optimized for **AI coding agents and developer copilots** that need practical references, not just marketing links.
+
 ## Contents
 
+- [Start Here](#start-here)
 - [AI Coding Skills](#ai-coding-skills)
-  - [General](#general)
+  - [Core MegaETH Development](#core-megaeth-development)
   - [Payments](#payments)
   - [DeFi](#defi)
-  - [Identity & Content](#identity--content)
-  - [Agents](#agents)
-- [Developer Tools](#developer-tools)
-- [Learning Resources](#learning-resources)
+  - [Identity, Content, and Domains](#identity-content-and-domains)
+  - [Agent Standards](#agent-standards)
+- [Developer Tools and Data Sources](#developer-tools-and-data-sources)
+- [Official Docs and Protocol References](#official-docs-and-protocol-references)
+- [Learning Resources and Examples](#learning-resources-and-examples)
 - [Contributing](#contributing)
+
+## Start Here
+
+If you're wiring up an AI agent for MegaETH, this is the most useful reading order:
+
+1. [MegaETH Docs](https://docs.megaeth.com) - overall docs portal
+2. [Realtime API docs](https://docs.megaeth.com/realtime-api) - how MegaETH's realtime transaction flow differs from standard RPC usage
+3. [MegaEVM docs](https://docs.megaeth.com/megaevm) - execution/storage model differences that matter for contracts and simulations
+4. [Mini-block docs](https://docs.megaeth.com/miniblocks) - how to think about state updates and subscriptions
+5. [megaeth-ai-developer-skills](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - practical agent-oriented implementation playbooks
 
 ## AI Coding Skills
 
-AI coding skills that enhance developer productivity on MegaETH. Skills follow the [SKILL.md](https://docs.anthropic.com/en/docs/claude-code/skills) / [AGENTS.md](https://docs.agentsmd.dev) conventions and work with tools like Claude Code, Cursor, Windsurf, and OpenClaw.
+AI coding skills that enhance developer productivity on MegaETH. Skills follow the [SKILL.md](https://docs.anthropic.com/en/docs/claude-code/skills) / [AGENTS.md](https://docs.agentsmd.dev) conventions and work with tools like Claude Code, Cursor, Windsurf, Codex, and OpenClaw.
 
-### General
+### Core MegaETH Development
 
-- [erc7710-delegations-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc7710-delegations.md) - AI coding skill for ERC-7710 delegations on MegaETH covering scoped permissions, caveat enforcers, revocation, redelegation chains, and redemption flows.
-- [megaeth-dev-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - End-to-end MegaETH development skill. Covers Foundry setup, eth_sendRawTransactionSync (EIP-7966) for instant receipts, MegaEVM gas model, storage optimization with Solady patterns, WebSocket mini-block subscriptions, Rex4 per-frame state growth, Privy headless signing, and debugging with mega-evme.
+- [megaeth-ai-developer-skills](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - The most complete MegaETH skill pack for AI agents. Covers Foundry setup, chain configuration, realtime receipts, WebSocket subscriptions, MegaEVM gas/storage patterns, MegaETH-specific testing, debugging with `mega-evme`, and ecosystem integrations.
+- [erc7710-delegations-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc7710-delegations.md) - Skill for ERC-7710 delegations on MegaETH covering scoped permissions, caveat enforcers, revocation, redelegation chains, and redemption flows.
+- [drand-vrf-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/drand-vrf.md) - Skill for randomness on MegaETH using drand / VRF-style patterns. Useful for agentic games, raffles, automation, and any app that needs verifiable randomness assumptions.
 
 ### Payments
 
-- [x402-payments-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/x402-payments.md) - AI coding skill for x402 HTTP payments on MegaETH using the standard Permit2 flow. Covers seller/server middleware, buyer/client signing, self-settlement via x402ExactPermit2Proxy and x402UptoPermit2Proxy at canonical addresses, USDm 18-decimal amount handling, and sub-50ms settlement with `realtime_sendRawTransaction`.
-- [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - AI coding skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integration patterns, and usage across MegaNames, Kumbaya DEX, and paymasters.
-- [meridian-x402-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/meridian.md) - AI coding skill for Meridian x402 payments on MegaETH covering seller-side settlement through Meridian’s /v1/settle API, organization/API key setup, the current Permit2-based facilitator flow for ERC-20 payments, and the legacy USDm EIP-3009 forwarder flow for backward compatibility. Includes buyer-side Permit2 approval/signing, facilitator-bound payment payload construction, and MegaETH-specific constants.
+- [x402-payments-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/x402-payments.md) - Skill for x402 HTTP payments on MegaETH using the Permit2 flow. Covers seller middleware, buyer signing, facilitator settlement, canonical proxy contracts, and MegaETH-appropriate realtime transaction handling.
+- [meridian-x402-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/meridian.md) - Skill for Meridian x402 flows on MegaETH covering seller-side settlement through Meridian’s API, current Permit2-based facilitator flow, and legacy USDm EIP-3009 forwarder compatibility.
+- [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - Skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integrations, and practical usage patterns across the ecosystem.
 
 ### DeFi
 
-- [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - AI coding skill for Kumbaya DEX (Uniswap V3 fork) covering token swaps, quoting, liquidity provision, pool discovery, multi-hop routing, and Permit2 flows on MegaETH.
-- [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - AI coding skill for integrating Sir Trading covering going long (minting APE), providing liquidity (minting TEA), closing/reducing positions (burning), quoting prices, creating new pairs (vaults), MegaSIR staking, claiming rewards, fee auctions, pair discovery, trading bots, and portfolio tracking on MegaETH.
+- [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - Skill for Kumbaya DEX (Uniswap v3-style) covering quoting, swaps, liquidity management, pool discovery, multi-hop routing, and Permit2 flows.
+- [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - Skill for integrating with Sir Trading covering long exposure, LP flows, rewards, pair discovery, and portfolio tracking on MegaETH.
 
-### Identity & Content
+### Identity, Content, and Domains
 
-- [dotmega-domains-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - AI coding skill for .Mega Domains (.mega naming service) covering name registration with USDM payments, forward/reverse resolution, text records, subdomains, subdomain marketplace with token gating, and Warren contenthash linking.
-- [warren-tools](https://github.com/planetai87/warren-tools) - AI coding skills and developer tools for WARREN, MegaETH's on-chain permanent web CMS. Includes Claude Code skills for deploying websites and NFT collections via fractal tree architecture, a standalone content loader, and a Chrome extension for browsing on-chain sites.
+- [dotmega-domains-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - Skill for .mega domains covering registration, forward/reverse resolution, text records, subdomains, and marketplace/payment flows.
+- [warren-tools](https://github.com/planetai87/warren-tools) - AI skills and tools for WARREN, MegaETH's on-chain permanent web CMS. Includes deployment flows for on-chain sites and NFT collections.
 
-### Agents
+### Agent Standards
 
-- [erc8004-trustless-agents-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc8004-trustless-agents.md) - AI coding skill for ERC-8004 (Trustless Agents) on MegaETH covering on-chain agent identity registration, reputation feedback, and validation requests across the Identity, Reputation, and Validation registries.
+- [erc8004-trustless-agents-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc8004-trustless-agents.md) - Skill for ERC-8004 Trustless Agents on MegaETH covering identity registration, reputation feedback, and validation request flows.
+- [ERC-8004 MegaETH skill draft](./erc8004-skill.md) - In-repo draft/spec notes for a MegaETH-focused ERC-8004 agent skill.
 
-## Developer Tools
+## Developer Tools and Data Sources
 
-Developer tools for the MegaETH ecosystem.
+- [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical token registry for MegaETH. Machine-readable token metadata for token discovery, wallet integration, and agent-side validation.
+- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - MCP server for on-chain portfolio data on MegaETH via MTRKR. Useful for read-only agent workflows around balances, DeFi positions, approvals, and address inspection.
+- [mega-evm](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM encapsulation based on revm. Includes `mega-evme` for replay, gas profiling, and MegaETH-specific debugging.
 
-- [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical token registry for MegaETH. Machine-readable token metadata (address, decimals, symbol, logo) used by DEXs, wallets, and AI agents for token discovery and validation.
-- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - MCP server for on-chain portfolio data on MegaETH via MTRKR. 11 read-only tools for token portfolios, NFT holdings, DeFi positions (Kumbaya, Prism), token risk scanning, approval checking, address inspection, transaction decoding, .mega name resolution, and pricing.
+## Official Docs and Protocol References
 
-## Learning Resources
+- [MegaETH Docs](https://docs.megaeth.com) - Official docs portal.
+- [Architecture](https://docs.megaeth.com/architecture) - High-level architecture reference for how MegaETH is put together.
+- [MegaEVM](https://docs.megaeth.com/megaevm) - MegaETH execution-model differences, especially relevant for contract engineers and AI code generation.
+- [Realtime API](https://docs.megaeth.com/realtime-api) - Reference for realtime transaction submission and immediate-feeling confirmation flows.
+- [Mini-blocks](https://docs.megaeth.com/miniblocks) - How mini-block production affects indexing, subscriptions, and application UX.
+- [RPC docs](https://docs.megaeth.com/rpc/1-method) - RPC method reference.
+- [RPC error codes](https://docs.megaeth.com/rpc/2-error-codes) - Useful for agent retries and debugging.
+- [Frontier / mainnet guide](https://docs.megaeth.com/frontier) - Operational guide for connecting to MegaETH mainnet.
+- [Testnet guide](https://docs.megaeth.com/testnet) - Testnet setup, faucet, and developer onboarding reference.
+- [Faucet docs](https://docs.megaeth.com/faucet) - Faucet usage and testnet funding flow.
 
-Educational content for building on MegaETH.
+## Learning Resources and Examples
 
-- [MegaETH Docs](https://docs.megaeth.com) - Official documentation covering MegaEVM differences, Realtime API (EIP-7966), mini-block architecture, and RPC reference.
-- [MegaETH Frontier Guide](https://docs.megaeth.com/frontier) - Guide to connecting to and using MegaETH Mainnet.
-- [mega-evm](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM encapsulation based on revm. Includes mega-evme for transaction replay, opcode-level gas profiling, and debugging.
-- [RedBlackTreeKV Demo](https://github.com/megaeth-labs/RedBlackTreeKV-demo) - Gas-efficient key-value store using Red-Black Trees in Solidity, optimized for MegaETH's storage cost model.
+- [RedBlackTreeKV Demo](https://github.com/megaeth-labs/RedBlackTreeKV-demo) - Example contract demonstrating storage-conscious patterns that matter more on MegaETH than on many other EVM chains.
 
 ## Contributing
 
