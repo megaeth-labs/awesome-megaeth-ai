@@ -24,7 +24,7 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 
 - [erc7710-delegations-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc7710-delegations.md) - AI coding skill for ERC-7710 delegations on MegaETH covering scoped permissions, caveat enforcers, revocation, redelegation chains, and redemption flows.
 - [megaeth-dev-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - End-to-end MegaETH development skill. Covers Foundry setup, eth_sendRawTransactionSync (EIP-7966) for instant receipts, MegaEVM gas model, storage optimization with Solady patterns, WebSocket mini-block subscriptions, Rex4 per-frame state growth, Privy headless signing, and debugging with mega-evme.
-- [moss-skills](https://github.com/megaeth-labs/moss-skills) - AI coding skills for agentic MegaETH wallet workflows using MOSS. Covers wallet login, delegated-key creation and management, permission inspection, revocation, and safer wallet-side execution flows for developers building with coding agents.
+- [moss-skills](https://github.com/megaeth-labs/moss-skills) - AI coding skills for developing and integrating MegaETH applications with MOSS. Covers wallet login flows, delegated-key lifecycle management, permission inspection, revocation, and safer wallet execution patterns for developers building with coding agents.
 
 ### Payments
 
