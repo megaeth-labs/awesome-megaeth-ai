@@ -22,19 +22,16 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 
 ### General
 
-- [erc7710-delegations-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc7710-delegations.md) - AI coding skill for ERC-7710 delegations on MegaETH covering scoped permissions, caveat enforcers, revocation, redelegation chains, and redemption flows.
-- [megaeth-dev-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - End-to-end MegaETH development skill. Covers Foundry setup, eth_sendRawTransactionSync (EIP-7966) for instant receipts, MegaEVM gas model, storage optimization with Solady patterns, WebSocket mini-block subscriptions, Rex4 per-frame state growth, Privy headless signing, and debugging with mega-evme.
+- [megaeth-dev-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - End-to-end MegaETH development skill centered on the MegaETH stack. Covers Foundry setup, eth_sendRawTransactionSync (EIP-7966), current MegaEVM gas and resource model, MOSS / MOSS CLI / MOSS Skills for wallet workflows, USDm, drand VRF, and debugging with mega-evme.
 - [moss-skills](https://github.com/megaeth-labs/moss-skills) - AI coding skills for developing and integrating MegaETH applications with MOSS. Covers wallet login flows, delegated-key lifecycle management, permission inspection, revocation, and safer wallet execution patterns for developers building with coding agents.
 
 ### Payments
 
 - [x402-payments-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/x402-payments.md) - AI coding skill for x402 HTTP payments on MegaETH using the standard Permit2 flow. Covers seller/server middleware, buyer/client signing, self-settlement via x402ExactPermit2Proxy and x402UptoPermit2Proxy at canonical addresses, USDm 18-decimal amount handling, and sub-50ms settlement with `realtime_sendRawTransaction`.
 - [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - AI coding skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integration patterns, and usage across MegaNames, Kumbaya DEX, and paymasters.
-- [meridian-x402-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/meridian.md) - AI coding skill for Meridian x402 payments on MegaETH covering seller-side settlement through Meridian’s /v1/settle API, organization/API key setup, the current Permit2-based facilitator flow for ERC-20 payments, and the legacy USDm EIP-3009 forwarder flow for backward compatibility. Includes buyer-side Permit2 approval/signing, facilitator-bound payment payload construction, and MegaETH-specific constants.
 
 ### DeFi
 
-- [kumbaya-dex-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/kumbaya-dex.md) - AI coding skill for Kumbaya DEX (Uniswap V3 fork) covering token swaps, quoting, liquidity provision, pool discovery, multi-hop routing, and Permit2 flows on MegaETH.
 - [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - AI coding skill for integrating Sir Trading covering going long (minting APE), providing liquidity (minting TEA), closing/reducing positions (burning), quoting prices, creating new pairs (vaults), MegaSIR staking, claiming rewards, fee auctions, pair discovery, trading bots, and portfolio tracking on MegaETH.
 
 ### Identity & Content
