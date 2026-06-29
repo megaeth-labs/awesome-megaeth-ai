@@ -30,6 +30,8 @@ AI coding skills that enhance developer productivity on MegaETH. Skills follow t
 - [x402-payments-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/x402-payments.md) - AI coding skill for x402 HTTP payments on MegaETH using the standard Permit2 flow. Covers seller/server middleware, buyer/client signing, self-settlement via x402ExactPermit2Proxy and x402UptoPermit2Proxy at canonical addresses, USDm 18-decimal amount handling, and sub-50ms settlement with `realtime_sendRawTransaction`.
 - [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - AI coding skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integration patterns, and usage across MegaNames, Kumbaya DEX, and paymasters.
 
+- [uniswap-skills](https://github.com/Uniswap/uniswap-ai/tree/main/docs/skills) - AI coding skills for integrating Uniswap tooling and contracts in MegaETH applications now that Uniswap contracts are live on MegaETH. Covers swap integration, v4 SDK integration, viem integration, liquidity planning, and v4 hook/security workflows developers may reuse on MegaETH.
+
 ### DeFi
 
 - [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - AI coding skill for integrating Sir Trading covering going long (minting APE), providing liquidity (minting TEA), closing/reducing positions (burning), quoting prices, creating new pairs (vaults), MegaSIR staking, claiming rewards, fee auctions, pair discovery, trading bots, and portfolio tracking on MegaETH.
