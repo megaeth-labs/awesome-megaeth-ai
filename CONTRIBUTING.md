@@ -2,6 +2,14 @@
 
 Thank you for helping grow the MegaETH AI ecosystem!
 
+## Repository Scope
+
+This repository is a discovery list, not a second distribution channel for
+official skills. Skills maintained for dedicated MegaETH products belong in
+[`megaeth-labs/skills`](https://github.com/megaeth-labs/skills). This list links
+to those canonical skills and catalogs independent community skills, tools,
+and learning resources.
+
 ## Adding a New Item
 
 1. Make sure the item is related to AI and MegaETH development
@@ -16,6 +24,7 @@ Thank you for helping grow the MegaETH AI ecosystem!
 - Documentation should be available
 - The project should provide clear value to MegaETH developers
 - Code should be open source or have a publicly accessible API/endpoint
+- The link should be canonical and must not point to a retired or superseded distribution
 
 ## What Counts as MegaETH-Related?
 
@@ -38,6 +47,11 @@ If your submission is a SKILL.md / AGENTS.md skill, please include in your PR de
 - **Scope** — What MegaETH-specific patterns does it cover?
 - **Testing** — Has it been tested against MegaETH mainnet or testnet?
 
+Before submitting, determine who owns the skill:
+
+- **Official MegaETH product skill:** contribute it to `megaeth-labs/skills` and update the canonical entry here only when necessary.
+- **Independent ecosystem skill:** add it under the appropriate Community Skills category.
+
 ## Pull Request Process
 
 1. Fork the repository
@@ -52,5 +66,4 @@ If your item doesn't fit an existing category, you may suggest a new one. Explai
 ## Questions?
 
 Open an issue if you're unsure whether something belongs here.
-
 

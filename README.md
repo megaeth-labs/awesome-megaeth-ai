@@ -1,74 +1,61 @@
 # Awesome MegaETH AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of AI-powered tools, skills, and resources for building on MegaETH.
+> AI skills, developer tools, and learning resources for building on MegaETH.
 
-**Disclaimer:** The resources listed here are community-contributed and are **not endorsed by MegaETH Labs**. Always do your own research before using any tool or resource. Inclusion in this list does not imply any warranty, security audit, or official recommendation.
+Official skills are maintained by MegaETH Labs in [`megaeth-labs/skills`](https://github.com/megaeth-labs/skills). Other entries are community projects; inclusion does not imply endorsement, warranty, or a security audit.
 
 ## Contents
 
-- [AI Coding Skills](#ai-coding-skills)
-  - [General](#general)
-  - [Payments](#payments)
+- [Official MegaETH Skills](#official-megaeth-skills)
+- [Community Skills](#community-skills)
   - [DeFi](#defi)
   - [Identity & Content](#identity--content)
-  - [Agents](#agents)
 - [Developer Tools](#developer-tools)
 - [Learning Resources](#learning-resources)
 - [Contributing](#contributing)
 
-## AI Coding Skills
+## Official MegaETH Skills
 
-AI coding skills that enhance developer productivity on MegaETH. Skills follow the [SKILL.md](https://docs.anthropic.com/en/docs/claude-code/skills) / [AGENTS.md](https://docs.agentsmd.dev) conventions and work with tools like Claude Code, Cursor, Windsurf, and OpenClaw.
+Install official skills from the [MegaETH Agent Skills repository](https://github.com/megaeth-labs/skills):
 
-### General
+```bash
+npx skills add megaeth-labs/skills --list
+```
 
-- [megaeth-dev-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills) - End-to-end MegaETH development skill centered on the MegaETH stack. Covers Foundry setup, eth_sendRawTransactionSync (EIP-7966), current MegaEVM gas and resource model, MOSS / MOSS CLI / MOSS Skills for wallet workflows, USDm, drand VRF, and debugging with mega-evme.
-- [moss-skills](https://github.com/megaeth-labs/moss-skills) - AI coding skills for developing and integrating MegaETH applications with MOSS. Covers wallet login flows, delegated-key lifecycle management, permission inspection, revocation, and safer wallet execution patterns for developers building with coding agents.
+- [`megaeth-developer-skills`](https://github.com/megaeth-labs/skills/tree/main/skills/megaeth-developer-skills) - Build dApps, smart contracts, protocol integrations, frontends, payments, agents, and debugging workflows on MegaETH.
+- [`moss-wallet-cli`](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-cli) - Operate a MOSS wallet safely from a terminal or coding agent.
+- [`moss-wallet-sdk`](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-sdk) - Integrate MOSS wallet authentication, approvals, paymasters, and signing into applications.
+- [`moss-wallet-security-review`](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-security-review) - Audit a MOSS integration before launch.
 
-### Payments
+## Community Skills
 
-- [x402-payments-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/x402-payments.md) - AI coding skill for x402 HTTP payments on MegaETH using the standard Permit2 flow. Covers seller/server middleware, buyer/client signing, self-settlement via x402ExactPermit2Proxy and x402UptoPermit2Proxy at canonical addresses, USDm 18-decimal amount handling, and sub-50ms settlement with `realtime_sendRawTransaction`.
-- [usdm-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/usdm-stablecoin.md) - AI coding skill for USDm, MegaETH's native stablecoin, covering ERC-2612 permit flows, payment integration patterns, and usage across MegaNames, Kumbaya DEX, and paymasters.
-
-- [uniswap-skills](https://github.com/Uniswap/uniswap-ai/tree/main/docs/skills) - AI coding skills for integrating Uniswap tooling and contracts in MegaETH applications now that Uniswap contracts are live on MegaETH. Covers swap integration, v4 SDK integration, viem integration, liquidity planning, and v4 hook/security workflows developers may reuse on MegaETH. Canonical Uniswap deployment references for MegaETH are available in the Uniswap docs for [v2](https://developers.uniswap.org/docs/protocols/v2/deployments), [v3](https://developers.uniswap.org/docs/protocols/v3/deployments/v3-megaeth-deployments), and [v4](https://developers.uniswap.org/docs/protocols/v4/deployments#megaeth-4326).
+Independent skills maintained by teams building in the MegaETH ecosystem.
 
 ### DeFi
 
-- [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - AI coding skill for integrating Sir Trading covering going long (minting APE), providing liquidity (minting TEA), closing/reducing positions (burning), quoting prices, creating new pairs (vaults), MegaSIR staking, claiming rewards, fee auctions, pair discovery, trading bots, and portfolio tracking on MegaETH.
+- [sir-trading-skill](https://github.com/SIR-trading/sir-trading-skill/blob/master/sir-trading.md) - Integrate Sir Trading positions, liquidity, staking, rewards, and market data on MegaETH.
+- [uniswap-ai](https://github.com/Uniswap/uniswap-ai/tree/main/docs/skills) - Build Uniswap swaps, liquidity flows, hooks, and SDK integrations with agent skills.
 
 ### Identity & Content
 
-- [dotmega-domains-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - AI coding skill for .Mega Domains (.mega naming service) covering name registration with USDM payments, forward/reverse resolution, text records, subdomains, subdomain marketplace with token gating, and Warren contenthash linking.
-- [warren-tools](https://github.com/planetai87/warren-tools) - AI coding skills and developer tools for WARREN, MegaETH's on-chain permanent web CMS. Includes Claude Code skills for deploying websites and NFT collections via fractal tree architecture, a standalone content loader, and a Chrome extension for browsing on-chain sites.
-
-### Agents
-
-- [erc8004-trustless-agents-skill](https://github.com/0xBreadguy/megaeth-ai-developer-skills/blob/main/erc8004-trustless-agents.md) - AI coding skill for ERC-8004 (Trustless Agents) on MegaETH covering on-chain agent identity registration, reputation feedback, and validation requests across the Identity, Reputation, and Validation registries.
+- [meganames-skill](https://github.com/0xBreadguy/mega-names/tree/main/skill) - Integrate .mega registration, resolution, records, subdomains, and marketplaces.
+- [warren-tools](https://github.com/planetai87/warren-tools) - Deploy and browse permanent on-chain websites and NFT collections with WARREN.
 
 ## Developer Tools
 
-Developer tools for the MegaETH ecosystem.
-
-- [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical token registry for MegaETH. Machine-readable token metadata (address, decimals, symbol, logo) used by DEXs, wallets, and AI agents for token discovery and validation.
-- [moss-cli](https://github.com/megaeth-labs/wallet-cli) - MegaETH wallet CLI for delegated-key workflows. Useful for agents and developers that need local wallet login, scoped key creation, permission inspection, and safer wallet-side execution flows on MegaETH.
-- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - MCP server for on-chain portfolio data on MegaETH via MTRKR. 11 read-only tools for token portfolios, NFT holdings, DeFi positions (Kumbaya, Prism), token risk scanning, approval checking, address inspection, transaction decoding, .mega name resolution, and pricing.
+- [mega-evm / mega-evme](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM implementation and CLI for transaction replay, gas profiling, and debugging.
+- [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical machine-readable token metadata for MegaETH.
+- [moss-cli](https://github.com/megaeth-labs/wallet-cli) - Wallet CLI for delegated keys, scoped permissions, and safer agent execution.
+- [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - Read-only MCP tools for MegaETH portfolios, positions, approvals, transactions, names, and pricing.
 
 ## Learning Resources
 
-Educational content for building on MegaETH.
-
-- [MegaETH Docs](https://docs.megaeth.com) - Official documentation covering MegaEVM differences, Realtime API (EIP-7966), mini-block architecture, and RPC reference.
-- [MegaETH Frontier Guide](https://docs.megaeth.com/frontier) - Guide to connecting to and using MegaETH Mainnet.
-- [mega-evm](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM encapsulation based on revm. Includes mega-evme for transaction replay, opcode-level gas profiling, and debugging.
-- [RedBlackTreeKV Demo](https://github.com/megaeth-labs/RedBlackTreeKV-demo) - Gas-efficient key-value store using Red-Black Trees in Solidity, optimized for MegaETH's storage cost model.
+- [MegaETH Docs](https://docs.megaeth.com) - Official network, MegaEVM, Realtime API, and RPC documentation.
+- [RedBlackTreeKV Demo](https://github.com/megaeth-labs/RedBlackTreeKV-demo) - A Solidity key-value store optimized for MegaETH's storage cost model.
 
 ## Contributing
 
-Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
-
-To have your agent(s) contribute, just reference the [AGENTS](AGENTS.md) file in root.
-
----
+Contributions are welcome. Read the [contribution guidelines](CONTRIBUTING.md) before opening a pull request. Agents should also follow the repository's [AGENTS.md](AGENTS.md).
 
 ## License
 
