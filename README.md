@@ -23,7 +23,7 @@ npx skills add megaeth-labs/skills --list
 ```
 
 - [`megaeth-developer-skills`](https://github.com/megaeth-labs/skills/tree/main/skills/megaeth-developer-skills) - Build dApps, smart contracts, protocol integrations, frontends, payments, agents, and debugging workflows on MegaETH.
-- [`moss-wallet-cli`](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-cli) - Operate a MOSS wallet safely from a terminal or coding agent.
+- [moss-wallet-cli skill](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-cli) - Teach coding agents safe delegated-key and wallet operations with `mega moss`.
 - [`moss-wallet-sdk`](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-sdk) - Integrate MOSS wallet authentication, approvals, paymasters, and signing into applications.
 - [`moss-wallet-security-review`](https://github.com/megaeth-labs/skills/tree/main/skills/moss-wallet-security-review) - Audit a MOSS integration before launch.
 
@@ -45,7 +45,7 @@ Independent skills maintained by teams building in the MegaETH ecosystem.
 
 - [mega-evm / mega-evme](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM implementation and CLI for transaction replay, gas profiling, and debugging.
 - [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical machine-readable token metadata for MegaETH.
-- [moss-cli](https://github.com/megaeth-labs/wallet-cli) - Wallet CLI for delegated keys, scoped permissions, and safer agent execution.
+- [MegaETH Wallet CLI (mega moss)](https://github.com/megaeth-labs/wallet-cli) - Install and run the wallet CLI for delegated keys, scoped permissions, and agent execution.
 - [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - Read-only MCP tools for MegaETH portfolios, positions, approvals, transactions, names, and pricing.
 
 ## Learning Resources
