@@ -43,6 +43,7 @@ Independent skills maintained by teams building in the MegaETH ecosystem.
 
 ## Developer Tools
 
+- [mega-evm / mega-evme](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM implementation and CLI for transaction replay, gas profiling, and debugging.
 - [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical machine-readable token metadata for MegaETH.
 - [moss-cli](https://github.com/megaeth-labs/wallet-cli) - Wallet CLI for delegated keys, scoped permissions, and safer agent execution.
 - [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - Read-only MCP tools for MegaETH portfolios, positions, approvals, transactions, names, and pricing.
@@ -50,7 +51,6 @@ Independent skills maintained by teams building in the MegaETH ecosystem.
 ## Learning Resources
 
 - [MegaETH Docs](https://docs.megaeth.com) - Official network, MegaEVM, Realtime API, and RPC documentation.
-- [mega-evm](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM implementation and transaction debugging tools.
 - [RedBlackTreeKV Demo](https://github.com/megaeth-labs/RedBlackTreeKV-demo) - A Solidity key-value store optimized for MegaETH's storage cost model.
 
 ## Contributing
