@@ -47,6 +47,7 @@ Independent skills maintained by teams building in the MegaETH ecosystem.
 - [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical machine-readable token metadata for MegaETH.
 - [MegaETH Wallet CLI (mega moss)](https://github.com/megaeth-labs/wallet-cli) - Install and run the wallet CLI for delegated keys, scoped permissions, and agent execution.
 - [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - Read-only MCP tools for MegaETH portfolios, positions, approvals, transactions, names, and pricing.
+- [OpenChainBench MegaETH RPC](https://openchainbench.com/benchmarks/megaeth-rpc) - Live p50/p90/p99 latency leaderboard for free public MegaETH RPC endpoints (no API key), probed every 60 seconds from 3 regions.
 
 ## Learning Resources
 
