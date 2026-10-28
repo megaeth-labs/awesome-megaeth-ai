@@ -45,6 +45,7 @@ Independent skills maintained by teams building in the MegaETH ecosystem.
 
 - [mega-evm / mega-evme](https://github.com/megaeth-labs/mega-evm) - MegaETH's EVM implementation and CLI for transaction replay, gas profiling, and debugging.
 - [mega-tokenlist](https://github.com/megaeth-labs/mega-tokenlist) - Canonical machine-readable token metadata for MegaETH.
+- [MegaAgent Protocol](https://github.com/MegaAgents/mega-agent) - Sub-10ms streaming settlement and scoped-allowance protocol for autonomous AI agent swarms on MegaETH.
 - [MegaETH Wallet CLI (mega moss)](https://github.com/megaeth-labs/wallet-cli) - Install and run the wallet CLI for delegated keys, scoped permissions, and agent execution.
 - [mtrkr-mcp-server](https://github.com/n1n4du/mtrkr-mcp-server) - Read-only MCP tools for MegaETH portfolios, positions, approvals, transactions, names, and pricing.
 
